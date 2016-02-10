@@ -1,0 +1,331 @@
+<Project>
+  <Name>BlackJack3</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>BlackJack3</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Dealer</Name>
+        <Access>Public</Access>
+        <Location left="25" top="10" />
+        <Size width="170" height="264" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">Deck d</Member>
+        <Member type="Field">List&lt;Observer&gt; registry</Member>
+        <Member type="Field">Human guestPlayer</Member>
+        <Member type="Field">Android housePlayer</Member>
+        <Member type="Method">public void register(Observer x)</Member>
+        <Member type="Method">public void handle()</Member>
+        <Member type="Method">public void handleTwo()</Member>
+        <Member type="Method">public void handleThree()</Member>
+        <Member type="Method">public void NewMethod()</Member>
+        <Member type="Method">public int checkWin()</Member>
+        <Member type="Method">public int countRound()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Android</Name>
+        <Access>Public</Access>
+        <Location left="401" top="71" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">Hand h</Member>
+        <Member type="Constructor">public Android(string name)</Member>
+        <Member type="Method">public void wantsCard()</Member>
+        <Member type="Method">public void getsCard(Card c)</Member>
+        <Member type="Method">public Hand showHand()</Member>
+        <Member type="Method">public void outcomeOfRound(Outcome result)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Human</Name>
+        <Access>Public</Access>
+        <Location left="425" top="370" />
+        <Size width="189" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">Hand h</Member>
+        <Member type="Constructor">public Human(string name)</Member>
+        <Member type="Method">public void wantsCard()</Member>
+        <Member type="Method">public void getsCard(Card c)</Member>
+        <Member type="Method">public void showHand()</Member>
+        <Member type="Method">public void outcomeOfRound(Outcome result)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Deck</Name>
+        <Access>Public</Access>
+        <Location left="956" top="57" />
+        <Size width="204" height="196" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">List&lt;Card&gt; discards</Member>
+        <Member type="Field">List&lt;Card&gt; d</Member>
+        <Member type="Method">public void update()</Member>
+        <Member type="Method">public string getData()</Member>
+        <Member type="Constructor">public Deck()</Member>
+        <Member type="Method">public void acceptDiscards(List&lt;Card&gt; dis)</Member>
+        <Member type="Method">public Card deal()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Hand</Name>
+        <Access>Public</Access>
+        <Location left="665" top="57" />
+        <Size width="198" height="196" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">List&lt;Card&gt; h</Member>
+        <Member type="Method">public string getData()</Member>
+        <Member type="Method">public void update()</Member>
+        <Member type="Method">public List&lt;Card&gt; surrenderCards()</Member>
+        <Member type="Method">public void add(Card c)</Member>
+        <Member type="Method">public void BJscore()</Member>
+        <Member type="Method">public string ToString()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>InputViewForm</Name>
+        <Access>Public</Access>
+        <Location left="25" top="486" />
+        <Size width="213" height="179" />
+        <Collapsed>False</Collapsed>
+        <Member type="Constructor">public InputViewForm(InputHandler han)</Member>
+        <Member type="Method">public void onButton_Click()</Member>
+        <Member type="Method">public void showCards()</Member>
+        <Member type="Method">public void button2_Click()</Member>
+        <Member type="Method">public void button1_Click()</Member>
+        <Member type="Method">public void buttonHold_Click()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>OutputViewForm</Name>
+        <Access>Public</Access>
+        <Location left="908" top="439" />
+        <Size width="196" height="142" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public void update()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Delegate">
+        <Name>InputHandler</Name>
+        <Access>Public</Access>
+        <Location left="25" top="323" />
+        <Size width="213" height="114" />
+        <Collapsed>False</Collapsed>
+        <ReturnType>void</ReturnType>
+        <Param>object sender</Param>
+        <Param>EventArgs e</Param>
+      </Entity>
+      <Entity type="Delegate">
+        <Name>Observer</Name>
+        <Access>Public</Access>
+        <Location left="665" top="323" />
+        <Size width="231" height="117" />
+        <Collapsed>False</Collapsed>
+        <ReturnType>void</ReturnType>
+      </Entity>
+      <Entity type="Class">
+        <Name>HouseForm</Name>
+        <Access>Public</Access>
+        <Location left="785" top="604" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">Android newField</Member>
+        <Member type="Method">public void showInfo()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Dependency" first="5" second="2">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="0" second="7">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>51</X>
+          <Y>299</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Association" first="0" second="8">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>225</X>
+          <Y>125</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>475</X>
+          <Y>347</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Dependency" first="0" second="1">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>220</X>
+          <Y>55</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>375</X>
+          <Y>91</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Dependency" first="0" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>218</X>
+          <Y>189</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>350</X>
+          <Y>396</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Association" first="1" second="4">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="2" second="4">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>639</X>
+          <Y>449</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>612</X>
+          <Y>94</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="0" second="3">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>220</X>
+          <Y>27</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>999</X>
+          <Y>23</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Dependency" first="5" second="8">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>134</X>
+          <Y>690</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>756</X>
+          <Y>479</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Dependency" first="6" second="8">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>1045</X>
+          <Y>367</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Association" first="5" second="7">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>254</X>
+          <Y>461</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>114</X>
+          <Y>298</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="5" second="4">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>285</X>
+          <Y>519</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>379</X>
+          <Y>311</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="6" second="4">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1012</X>
+          <Y>360</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>820</X>
+          <Y>278</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Dependency" first="1" second="9">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>575</X>
+          <Y>324</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>685</X>
+          <Y>672</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Association" first="9" second="8">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>

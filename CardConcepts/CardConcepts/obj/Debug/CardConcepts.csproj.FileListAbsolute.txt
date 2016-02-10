@@ -1,0 +1,10 @@
+C:\Users\langtuqn2007\Documents\NClass Generated Projects\CardConcepts\CardConcepts\bin\Debug\CardConcepts.dll
+C:\Users\langtuqn2007\Documents\NClass Generated Projects\CardConcepts\CardConcepts\bin\Debug\CardConcepts.pdb
+C:\Users\langtuqn2007\Documents\NClass Generated Projects\CardConcepts\CardConcepts\obj\Debug\CardConcepts.csprojResolveAssemblyReference.cache
+C:\Users\langtuqn2007\Documents\NClass Generated Projects\CardConcepts\CardConcepts\obj\Debug\CardConcepts.dll
+C:\Users\langtuqn2007\Documents\NClass Generated Projects\CardConcepts\CardConcepts\obj\Debug\CardConcepts.pdb
+C:\Users\sagar5589\Desktop\CIS 501 Assn2\CardConcepts\CardConcepts\bin\Debug\CardConcepts.dll
+C:\Users\sagar5589\Desktop\CIS 501 Assn2\CardConcepts\CardConcepts\bin\Debug\CardConcepts.pdb
+C:\Users\sagar5589\Desktop\CIS 501 Assn2\CardConcepts\CardConcepts\obj\Debug\CardConcepts.csprojResolveAssemblyReference.cache
+C:\Users\sagar5589\Desktop\CIS 501 Assn2\CardConcepts\CardConcepts\obj\Debug\CardConcepts.dll
+C:\Users\sagar5589\Desktop\CIS 501 Assn2\CardConcepts\CardConcepts\obj\Debug\CardConcepts.pdb

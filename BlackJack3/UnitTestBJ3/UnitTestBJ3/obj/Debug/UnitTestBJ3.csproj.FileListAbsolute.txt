@@ -1,0 +1,9 @@
+C:\Users\sagar5589\Desktop\UnitTestBJ3\UnitTestBJ3\bin\Debug\UnitTestBJ3.exe.config
+C:\Users\sagar5589\Desktop\UnitTestBJ3\UnitTestBJ3\bin\Debug\UnitTestBJ3.exe
+C:\Users\sagar5589\Desktop\UnitTestBJ3\UnitTestBJ3\bin\Debug\UnitTestBJ3.pdb
+C:\Users\sagar5589\Desktop\UnitTestBJ3\UnitTestBJ3\bin\Debug\BlackJack3.exe
+C:\Users\sagar5589\Desktop\UnitTestBJ3\UnitTestBJ3\bin\Debug\CardConcepts.dll
+C:\Users\sagar5589\Desktop\UnitTestBJ3\UnitTestBJ3\bin\Debug\BlackJack3.pdb
+C:\Users\sagar5589\Desktop\UnitTestBJ3\UnitTestBJ3\obj\Debug\UnitTestBJ3.csprojResolveAssemblyReference.cache
+C:\Users\sagar5589\Desktop\UnitTestBJ3\UnitTestBJ3\obj\Debug\UnitTestBJ3.exe
+C:\Users\sagar5589\Desktop\UnitTestBJ3\UnitTestBJ3\obj\Debug\UnitTestBJ3.pdb
